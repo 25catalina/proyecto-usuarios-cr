@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f6fa;
+    color: #2f3542;
+    margin: 40px;
+}
+
+h1 {
+    color: #1e3799;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    background: white;
+}
+
+th {
+    background-color: #1e3799;
+    color: white;
+    padding: 10px;
+}
+
+td {
+    padding: 8px;
+}
+
+a {
+    color: #1e3799;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+form label {
+    font-weight: bold;
+}
+
+button {
+    background-color: #1e3799;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
