@@ -33,13 +33,13 @@ def crear_usuario_form():
 def crear_usuario():
     nombre = request.form["nombre"]
     apellido = request.form["apellido"]
-    email = request.form["email"]
+    email = request.form["correo"]
     edad = request.form["edad"]
 
     conn = get_connection()
     cursor = conn.cursor()
     query = "INSERT INTO usuarios (nombre, apellido, correo, edad) VALUES ( %(nombre)s, %(apellido)s, %( email)s, %( edad)s)"
-    cursor.execute(query)
+    cursor.execute(query, nombre, apellido, email, edad)
     conn.close()
     cursor.close()
 
