@@ -29,7 +29,7 @@ def crear_usuario_form():
     return render_template("crear_usuario.html")
 
 
-@app.route("/crear")
+@app.route("/crear", methods = ["POST"])
 def crear_usuario():
     nombre = request.form["nombre"]
     apellido = request.form["apellido"]
