@@ -19,7 +19,7 @@ def index():
     cursor = conn.cursor(dictionary=True)
     cursor.execute("SELECT * FROM usuarios")
     lista_usuarios = cursor.fetchone()
-    cursor.close()
+    #cursor.close()
     conn.close()
     return render_template("listar_usuarios.html", usuarios=lista_usuarios)
 
