@@ -9,7 +9,7 @@ def get_connection():
         host="localhost",
         user="root",
         password="root",
-        database="esquema_usuario"
+        database="esquema_usuarios"
     )
 
 
